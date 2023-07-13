@@ -10,3 +10,7 @@ Strengthen HTML, CSS, JavaScript and API use. Data is updated as often as the us
 
 ## Fixes
 Find ways to enhance UI. Potentially add more animations or other UI effects
+
+## Images
+<img width="960" alt="image" src="https://github.com/damian-fabrizio/Moon-Phase/assets/135930665/40ffd196-6eba-4614-9ac9-6a4e8dc7ca51">
+
