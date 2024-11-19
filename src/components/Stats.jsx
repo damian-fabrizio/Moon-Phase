@@ -1,5 +1,4 @@
 import { useEffect } from "react"
-import { API_KEY } from "../config"
 
 const Stats = () => {
   return (

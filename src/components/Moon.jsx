@@ -1,5 +1,9 @@
+const apiKey = import.meta.env.VITE_API_KEY;
+console.log('API Key:', import.meta.env.VITE_API_KEY);
+
+
+
 import { useEffect } from "react";
-import { API_KEY } from "../config.js";
 import waxgib from "../assets/8-phases/waxinggibbous1.png";
 import firstq from "../assets/8-phases/firstquarter1.png";
 import full from "../assets/8-phases/fullmoon1.png";
@@ -11,13 +15,13 @@ import waxcre from "../assets/8-phases/waxing-crescent1.png";
 
 // UNCOMMENT STRICTMODE TAG IN MAIN.JSX BEFORE PUSHING TO GITHUB
 
-const basicUrl = "https://moon-phase.p.rapidapi.com/basic";
+
 const url = "https://moon-phase.p.rapidapi.com/advanced";
 
 const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': API_KEY,
+		'x-rapidapi-key': apiKey,
 		'x-rapidapi-host': 'moon-phase.p.rapidapi.com'
 	}
 };
