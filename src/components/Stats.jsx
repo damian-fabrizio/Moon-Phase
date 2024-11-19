@@ -14,39 +14,39 @@ const Stats = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-6 md:p-20 h-full w-full font-scope">
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Illumination</p>
-                <span id="illumination" className="text-2xl sm:text-3xl md:text-4xl">92%</span>
+                <span id="illumination" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Distance From Earth</p>
-                <span id="distance" className="text-2xl sm:text-3xl md:text-4xl">223,678 mi</span>
+                <span id="distance" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Age</p>
-                <span id="age" className="text-2xl sm:text-3xl md:text-4xl">4 Days</span>
+                <span id="age" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Moonrise</p>
-                <span  id="moonrise" className="text-2xl sm:text-3xl md:text-4xl">5:47 PM</span>
+                <span  id="moonrise" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Moonset</p>
-                <span id="moonset" className="text-2xl sm:text-3xl md:text-4xl">12:59 AM</span>
+                <span id="moonset" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Last Full Moon</p>
-                <span id="lastFull" className="text-2xl sm:text-3xl md:text-4xl">1 Day Ago</span>
+                <span id="lastFull" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Next Full Moon</p>
-                <span id="nextFull" className="text-2xl sm:text-3xl md:text-4xl">In 15 Days</span>
+                <span id="nextFull" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Last New Moon</p>
-                <span id="lastNew" className="text-2xl sm:text-3xl md:text-4xl">10 Days Ago</span>
+                <span id="lastNew" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
             <div className="flex flex-col items-center text-center gap-2 border-0">
                 <p className="text-sm">Next New Moon</p>
-                <span id="nextNew" className="text-2xl sm:text-3xl md:text-4xl">In 3 Days</span>
+                <span id="nextNew" className="text-2xl sm:text-3xl md:text-4xl">Loading...</span>
             </div>
 
         </div>

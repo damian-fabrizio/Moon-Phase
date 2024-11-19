@@ -131,8 +131,8 @@ const Moon = () => {
         <div className="flex justify-center items-center w-screen h-screen pb-8 border-0">
             <img id="moonImage" src={waxcre} alt="waxcre" className="h-24 w-24 sm:h-40 sm:w-40 md:h-48 md:w-48 lg:h-72 lg:w-72 xl:h-80 xl:w-80 mix-blend-lighten opacity-85 border-0"/>
             <div className="flex flex-col text-left p-4 gap-0 border-0">
-            <h3 id="phaseTitle" className="text-2xl md:text-3xl lg:text-5xl font-scope border-0">Waxing Crescent</h3>
-            <p id="currentDate" className="text-sm md:text-lg lg:text-xl pt-2 font-scope border-0">Saturday November 16 2024</p>
+            <h3 id="phaseTitle" className="text-2xl md:text-3xl lg:text-5xl font-scope border-0">Loading...</h3>
+            <p id="currentDate" className="text-sm md:text-lg lg:text-xl pt-2 font-scope border-0">Loading...</p>
             </div>
         </div>
     </div>
