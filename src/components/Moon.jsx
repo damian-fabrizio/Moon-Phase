@@ -1,8 +1,5 @@
 const apiKey = import.meta.env.VITE_API_KEY;
 
-
-
-
 import { useEffect } from "react";
 import waxgib from "../assets/8-phases/waxinggibbous1.png";
 import firstq from "../assets/8-phases/firstquarter1.png";
@@ -95,16 +92,22 @@ const getMoonPhase = async () => {
 
         document.querySelector('#moonrise').innerHTML = formattedMoonrise;
 
-        // formatting the moonset time
+        // format moonset
         const unformattedMoonset = result.moon.moonset;
-        const [moonsetHours, moonsetMinutes] = unformattedMoonset.split(':');
-        const moonsetHoursInt = parseInt(moonsetHours, 10);
-        const moonsetSuffix = moonsetHoursInt >=12 ? "PM" : "AM";
-        const formattedMoonsetHours = moonsetHoursInt % 12 || 12;
-        const formattedMoonset = formattedMoonsetHours+":"+moonsetMinutes+moonsetSuffix;
 
+        if(unformattedMoonset !== null){
+            const [moonsetHours, moonsetMinutes] = unformattedMoonset.split(':');
+            const moonsetHoursInt = parseInt(moonsetHours, 10);
+            const moonsetSuffix = moonsetHoursInt >=12 ? "PM" : "AM";
+            const formattedMoonsetHours = moonsetHoursInt % 12 || 12;
+            const formattedMoonset = formattedMoonsetHours+":"+moonsetMinutes+moonsetSuffix;
+            document.querySelector('#moonset').innerHTML = formattedMoonset;
+        }else{
+            document.querySelector('#moonset').innerHTML = "No Data";
+        }
+        
+        
 
-        document.querySelector('#moonset').innerHTML = formattedMoonset;
         document.querySelector('#lastFull').innerHTML = result.moon_phases.full_moon.last.days_ago+" Days Ago";
         document.querySelector('#nextFull').innerHTML = "In "+result.moon_phases.full_moon.next.days_ahead+" Days";
         document.querySelector('#lastNew').innerHTML = result.moon_phases.new_moon.last.days_ago+" Days Ago";
